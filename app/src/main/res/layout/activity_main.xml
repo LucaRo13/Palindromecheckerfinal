@@ -18,7 +18,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:textSize="14sp" />
+        tools:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
@@ -34,30 +34,42 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Input"
+        android:layout_marginStart="16dp"
+        android:text="Input (Sting>5)"
+        app:layout_constraintBottom_toBottomOf="@+id/txtInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtInput"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="125dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="22dp"
         android:ems="10"
         android:inputType="text"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:text="String>5"
+        android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="94dp"
         tools:layout_editor_absoluteY="114dp" />
 
-    <EditText
-        android:id="@+id/editText3"
+    <TextView
+        android:id="@+id/tvOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints"
+        tools:textSize="24sp"
+        android:background="#cccccc"/>
 
 </android.support.constraint.ConstraintLayout>
